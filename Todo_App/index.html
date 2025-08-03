@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="main.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="wrapper flow">
+      <h1>Todo App</h1>
+      <article class="grid_todo" aria-label="todo form and list">
+        <form id="todo_form">
+          <input
+            type="text"
+            required
+            placeholder="Need Todo"
+            autofocus
+            autocomplete="off"
+            name="todo"
+          />
+        </form>
+        <ul id="todos" class="todo_wrapper"></ul>
+      </article>
+    </main>
+  </body>
+</html>
