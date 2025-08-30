@@ -1,48 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Quiz Game</title>
-  </head>
-  <body>
-    <main class="container">
-      <article class="screen active flow" id="start_screen">
-        <h1>Quiz Time!</h1>
-        <p>Test your knowledge with these questions.</p>
-        <button id="start_btn">Start Quiz</button>
-      </article>
-      <section class="screen" id="quiz_screen">
-        <article class="quiz_header">
-          <h2 id="question_text">Questions</h2>
-          <div class="quiz_info">
-            <p>
-              Questions <span id="current_question">1</span> of
-              <span id="total_questions">5</span>
-            </p>
-            <p>Score: <span id="score">0</span></p>
-          </div>
-        </article>
-        <article id="answers_container" class="answers_container"></article>
-        <div class="progress_bar">
-          <div id="progress" class="progress"></div>
-        </div>
-      </section>
-      <article id="result_screen" class="screen">
-        <h1>Quiz Results</h1>
-        <div class="result_info">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Quiz Game</title>
+</head>
+
+<body>
+  <main class="container">
+    <div class="screen active flow" id="start-screen">
+      <h1>Quiz Time!</h1>
+      <p>Test your knowledge with these fun questions</p>
+      <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <div class="screen flow" id="quiz-screen">
+      <div class="quiz-header">
+        <h2 id="question-text">Question goes here</h2>
+        <div class="quiz-info">
           <p>
-            You scored <span id="final_score">0</span> out of
-            <span id="max_score">0</span>
+            Question <span id="current-question">1</span> of <span id="total-questions">5</span>
           </p>
-          <div id="result_message">
-            <h2>Keep studying!</h2>
-          </div>
-          <button id="restart_btn">Restart Quiz</button>
+
+          <p>Score: <span id="score">0</span></p>
         </div>
-      </article>
-    </main>
+      </div>
+
+      <div id="answers-container" class="answers-container">
+        <!-- Answer buttons will be insterted here from our js code later at some point -->
+      </div>
+
+      <div class="progress-bar">
+        <div id="progress" class="progress"></div>
+      </div>
+    </div>
+
+    <div id="result-screen" class="screen">
+      <h1>Quiz Results</h1>
+      <div class="result-info">
+        <p>You scored <span id="final-score">0</span> out of <span id="max-score">5</span></p>
+
+        <div id="result-message">Good job!</div>
+      </div>
+      <button id="restart-btn">Restart Quiz</button>
+    </div>
+    </div>
+
     <script src="./script.js"></script>
-  </body>
+</body>
+
 </html>
